@@ -1,0 +1,23 @@
+name: WelcomeMSGS
+version: 1.0.0
+main: org.gangsta.welcome.WelcomeMSGS
+api-version: 1.21
+author: Gangsta
+description: Fully configurable welcome messages plugin with gradients, fireworks, and sounds
+
+commands:
+  welcome:
+    description: Main WelcomeMSGS command
+    usage: /welcome <reload|toggle|set|add|remove|list|test|setmsg>
+    permission: welcomemsgs.admin
+    aliases: [welcomemsg, wmsg]
+
+permissions:
+  welcomemsgs.admin:
+    description: Allows access to all WelcomeMSGS commands
+    default: op
+  welcomemsgs.*:
+    description: All WelcomeMSGS permissions
+    default: op
+    children:
+      welcomemsgs.admin: true

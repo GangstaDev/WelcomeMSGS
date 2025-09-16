@@ -1,0 +1,107 @@
+# WelcomeMSGS Configuration
+# Use %player% for player name, %displayname% for display name
+# Supports hex colors: &#FF6B6B, regular & color codes and gradients
+# Gradient Example "&gradient:FF6B6B:FFA07A&EXAMPLE&end&"
+# Multi message support, will choose a random specified message
+
+# First join messages (for players who have never joined before)
+first-join:
+  enabled: true
+  messages:
+    - "&#FF6B6BWelcome &#FFFFFFa%player% &#4ECDC4to the server!"
+    - "&#FFD93DThis is your first time joining! &#6BCF7FEnjoy your stay!"
+    - "&#FF9A9EA warm welcome to &#FFFFFF%player%&#FF9A9E!"
+
+# Regular join messages (for returning players)
+join:
+  enabled: true
+  messages:
+    - "&#4ECDC4%player% &#FFFFFFhas joined the game!"
+    - "&#96CEB4Welcome back &#FFFFFF%player%&#96CEB4!"
+    - "&#A8EDEA%player% &#FFFFFFis back online!"
+
+# Leave messages
+leave:
+  enabled: true
+  messages:
+    - "&#FF6B6B%player% &#FFFFFFhas left the game!"
+    - "&#C7CEEAGoodbye &#FFFFFF%player%&#C7CEEA!"
+    - "&#FFEAA7See you later &#FFFFFF%player%&#FFEAA7!"
+
+# Title messages
+titles:
+  enabled: true
+  first-join:
+    title: "&#FF6B6BWelcome!"
+    subtitle: "&#4ECDC4Enjoy your stay &#FFFFFF%player%&#4ECDC4!"
+    fade-in: 20
+    stay: 60
+    fade-out: 20
+  regular-join:
+    title: "&#4ECDC4Welcome Back!"
+    subtitle: "&#96CEB4%player%"
+    fade-in: 10
+    stay: 40
+    fade-out: 10
+
+# Firework effects
+fireworks:
+  enabled: true
+  first-join-only: false  # Set to true to only show fireworks on first join
+  type: "BALL"  # BALL, BALL_LARGE, STAR, BURST, CREEPER
+  colors:
+    - "RED"
+    - "BLUE"
+    - "GREEN"
+    - "YELLOW"
+  fade-colors:
+    - "ORANGE"
+    - "PURPLE"
+  flicker: true
+  trail: true
+  power: 1  # 1-3, higher = flies higher
+
+# Join sounds
+sounds:
+  enabled: true
+  first-join: "ENTITY_PLAYER_LEVELUP"
+  regular-join: "ENTITY_EXPERIENCE_ORB_PICKUP"
+  volume: 1.0
+  pitch: 1.0
+
+# Command messages
+command-messages:
+  no-permission: "&#FF6B6BYou don't have permission to use this command!"
+  config-reloaded: "&#4ECDC4Configuration reloaded successfully!"
+  feature-enabled: "&#4ECDC4%feature% has been enabled!"
+  feature-disabled: "&#FF6B6B%feature% has been disabled!"
+  invalid-feature: "&#FF6B6BInvalid feature! Available: firstjoin, join, leave, titles, fireworks, sounds"
+  config-set: "&#4ECDC4Set %path% to: %value%"
+  message-added: "&#4ECDC4Message added to %type%!"
+  message-removed: "&#FF6B6BMessage %index% removed from %type%!"
+  invalid-index: "&#FF6B6BInvalid message index!"
+  invalid-type: "&#FF6B6BInvalid message type! Available: firstjoin, join, leave"
+  no-messages: "&#FFEAA7No messages found for %type%"
+  test-executed: "&#4ECDC4Test executed for %type%!"
+  player-only: "&#FF6B6BThis command can only be used by players!"
+  usage-toggle: "&#FF6B6BUsage: /welcome toggle <feature>"
+  usage-set: "&#FF6B6BUsage: /welcome set <path> <value>"
+  usage-add: "&#FF6B6BUsage: /welcome add <type> <message>"
+  usage-remove: "&#FF6B6BUsage: /welcome remove <type> <index>"
+  usage-list: "&#FF6B6BUsage: /welcome list <type>"
+  usage-test: "&#FF6B6BUsage: /welcome test <type>"
+  usage-setmsg: "&#FF6B6BUsage: /welcome setmsg <type> <message>"
+  help-header: "&#FF6B6B=== WelcomeMSGS Commands ==="
+  help-reload: "&#4ECDC4/welcome reload &#FFFFFF- Reload the configuration"
+  help-toggle: "&#4ECDC4/welcome toggle <feature> &#FFFFFF- Toggle features on/off"
+  help-set: "&#4ECDC4/welcome set <path> <value> &#FFFFFF- Set configuration values"
+  help-add: "&#4ECDC4/welcome add <type> <message> &#FFFFFF- Add messages"
+  help-remove: "&#4ECDC4/welcome remove <type> <index> &#FFFFFF- Remove messages"
+  help-list: "&#4ECDC4/welcome list <type> &#FFFFFF- List messages"
+  help-test: "&#4ECDC4/welcome test <type> &#FFFFFF- Test messages/effects"
+  help-setmsg: "&#4ECDC4/welcome setmsg <type> <message> &#FFFFFF- Set command messages"
+  help-features: "&#FFEAA7Features: firstjoin, join, leave, titles, fireworks, sounds"
+  help-types: "&#FFEAA7Types: firstjoin, join, leave"
+  help-msgtypes: "&#FFEAA7Message types: no-permission, config-reloaded, feature-enabled, etc."
+  list-header: "&#4ECDC4=== %type% Messages ==="
+  list-item: "&#FFEAA7%index%. %message%"

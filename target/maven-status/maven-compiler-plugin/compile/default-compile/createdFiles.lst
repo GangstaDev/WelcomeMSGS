@@ -1,0 +1,9 @@
+org\gangsta\welcome\commands\WelcomeCommand.class
+org\gangsta\welcome\listeners\PlayerJoinLeaveListener.class
+org\gangsta\welcome\managers\ConfigManager.class
+org\gangsta\welcome\WelcomeMSGS.class
+org\gangsta\welcome\util\ColorUtil.class
+org\gangsta\welcome\commands\WelcomeCommand$1.class
+org\gangsta\welcome\managers\EffectManager.class
+org\gangsta\welcome\managers\MessageManager.class
+org\gangsta\welcome\listeners\PlayerJoinLeaveListener$1.class
