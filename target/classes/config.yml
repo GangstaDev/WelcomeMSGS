@@ -8,7 +8,7 @@
 first-join:
   enabled: true
   messages:
-    - "&#FF6B6BWelcome &#FFFFFFa%player% &#4ECDC4to the server!"
+    - "&#FF6B6BWelcome &#FFFFFF%player% &#4ECDC4to the server!"
     - "&#FFD93DThis is your first time joining! &#6BCF7FEnjoy your stay!"
     - "&#FF9A9EA warm welcome to &#FFFFFF%player%&#FF9A9E!"
 
